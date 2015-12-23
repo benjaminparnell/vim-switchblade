@@ -16,6 +16,18 @@ Use your favorite plugin manager.
   1. Add `Plug 'benjaminparnell/vim-switchblade'` to .vimrc
   2. Run `:PlugInstall`
 
+Default Linter
+==============
+
+Set your syntastic linter as normal, this will be used when no javascript linter config is detected by this plugin.
+
+e.g. with vim-plug:
+
+```
+let g:syntastic_javascript_checkers = ['standard']
+Plug 'benjaminparnell/vim-switchblade'
+```
+
 License
 -------
 

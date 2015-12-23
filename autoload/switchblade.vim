@@ -5,8 +5,15 @@ let switchblade#linters = [
 \]
 
 function! switchblade#initialize(root)
-  let checkers = map(copy(g:switchblade#linters), 's:check(v:val)')
-  let g:syntastic_javascript_checkers = checkers
+  let checkers = []
+  for checker in map(copy(g:switchblade#linters), 's:check(v:val)')
+    if type(checker)
+      call add(checkers, checker)
+    endif
+  endfor
+  if len(checkers)
+    let g:syntastic_javascript_checkers = checkers
+  endif
 endfunction
 
 function! s:check(checker)
