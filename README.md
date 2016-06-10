@@ -1,9 +1,13 @@
 vim-switchblade
 ===============
 
-Built on top of [syntastic](https://github.com/scrooloose/syntastic),
 vim-switchblade works out if you have any javascript linter config files in
-your working directory and turns those linters on in syntastic.
+your working directory and cofigures your linter to use them.
+
+Works with:
+
+  * [Syntastic](https://github.com/scrooloose/syntastic),
+  * [Neomake](https://github.com/neomake/neomake)
 
 This is very much an experiment. Don't hurt me.
 
@@ -19,12 +23,22 @@ Use your favorite plugin manager.
 Default Linter
 ==============
 
-Set your syntastic linter as normal, this will be used when no javascript linter config is detected by this plugin.
+Set your  linter as normal, this will be used when no javascript linter config
+is detected by this plugin.
 
 e.g. with vim-plug:
 
+## Syntasic
+
 ```
 let g:syntastic_javascript_checkers = ['standard']
+Plug 'benjaminparnell/vim-switchblade'
+```
+
+## Neomake
+
+```
+let g:neomake_javascript_enabled_makers = ['standard']
 Plug 'benjaminparnell/vim-switchblade'
 ```
 
