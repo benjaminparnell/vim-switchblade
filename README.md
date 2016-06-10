@@ -6,10 +6,8 @@ your working directory and cofigures your linter to use them.
 
 Works with:
 
-  * [Syntastic](https://github.com/scrooloose/syntastic),
+  * [Syntastic](https://github.com/scrooloose/syntastic)
   * [Neomake](https://github.com/neomake/neomake)
-
-This is very much an experiment. Don't hurt me.
 
 Installation
 ============
@@ -28,14 +26,16 @@ is detected by this plugin.
 
 e.g. with vim-plug:
 
-## Syntasic
+Syntasic
+--------
 
 ```
 let g:syntastic_javascript_checkers = ['standard']
 Plug 'benjaminparnell/vim-switchblade'
 ```
 
-## Neomake
+Neomake
+-------
 
 ```
 let g:neomake_javascript_enabled_makers = ['standard']
@@ -43,6 +43,6 @@ Plug 'benjaminparnell/vim-switchblade'
 ```
 
 License
--------
+=======
 
 MIT
