@@ -12,7 +12,7 @@ Works with:
 Installation
 ============
 
-Use your favorite plugin manager.
+Use your favourite plugin manager.
 
 - [vim-plug](https://github.com/junegunn/vim-plug)
   1. Add `Plug 'benjaminparnell/vim-switchblade'` to .vimrc
